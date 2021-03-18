@@ -17,6 +17,7 @@
 import getSiteMeta from "~/utils/getSiteMeta";
 
   export default {
+    transition: 'slide-bottom',
     async asyncData({ $content, params }) {
         const article = await $content('articles', params.slug).fetch()
 
@@ -132,6 +133,12 @@ import getSiteMeta from "~/utils/getSiteMeta";
         };
         return getSiteMeta(metaData);
       }
+    },
+    mounted () {
+      this.$nextTick(() => {
+        this.$nuxt.$loading.start()
+        setTimeout(() => this.$nuxt.$loading.finish(), 1000)
+      })
     }
   }
 </script>

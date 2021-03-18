@@ -6,6 +6,7 @@
 
 <script>
   export default {
+    transition: 'slide-bottom',
     async asyncData({ $content, params }) {
         const article = await $content('pages', params.slug).fetch()
 

@@ -18,6 +18,7 @@
 
 <script>
   export default {
+    transition: 'slide-bottom',
     async asyncData({ $content, params }) {
       const articles = await $content('articles')
         .only(['title', 'description', 'img', 'slug', 'author'])

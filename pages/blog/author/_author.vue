@@ -21,6 +21,7 @@
 
 <script>
   export default {
+    transition: 'slide-bottom',
     async asyncData({ $content, params }) {
       const articles = await $content('articles', params.slug)
         .where({

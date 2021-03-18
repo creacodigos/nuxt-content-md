@@ -66,6 +66,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+
   // SiteMap Configuration: https://redfern.dev/articles/adding-a-sitemap-using-nuxt-content/
   sitemap: { 
     hostname: process.env.BASE_URL, // https://www.yoursite.com
@@ -73,8 +74,17 @@ export default {
       return getRoutes();
     },
   },
+
   content: {
     nestedProperties: ['author.name'],
     //liveEdit: false
+  },
+
+  // https://es.nuxtjs.org/examples/customize-nuxt-loading
+  loading: {
+    color: 'black',
+    height: '2px',
+    continuous: true,
+    duration: 1000
   }
 }
