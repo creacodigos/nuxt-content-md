@@ -5,7 +5,8 @@ img: first-blog-post.jpg
 alt: my first blog post
 author:
   name: Jorge Santana
-  bio: Full Stack Developer & PizzaBurger Maket
+  bio: Full Stack Developer & PizzaBurger Maker 🖥️ 🍕 🍔 🎸
+  img: https://avatars.githubusercontent.com/u/50615503?s=400&u=d6ef3d6548024516b1ca246386958bf32843607c&v=4
 ---
 # Yii 2
 

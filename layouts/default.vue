@@ -2,15 +2,14 @@
   <div>
     <div>
         <b-navbar toggleable="lg" type="dark" variant="info">
-          <div class="container">
-              <b-navbar-brand href="#">Chuletas</b-navbar-brand>
+          <div class="container navbar">
+            <nuxt-link to="/" class="title">Chuletas</nuxt-link>
 
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
             <b-collapse id="nav-collapse" is-nav>
-            <b-navbar-nav>
-                <b-nav-item href="/">Listado</b-nav-item>
-                <b-nav-item href="/blog/">Sobre mi</b-nav-item>
+            <b-navbar-nav>              
+                <nuxt-link to="/sobre-mi">Sobre mi</nuxt-link>
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
@@ -42,3 +41,13 @@
     <Nuxt  class="container p-3" />
   </div>
 </template>
+
+<style scoped>
+.navbar a{
+  color: white;
+}
+.navbar a.title{
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+</style>

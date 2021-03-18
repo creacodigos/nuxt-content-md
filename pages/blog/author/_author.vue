@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img v-if="articles[0].author.img" :src="articles[0].author.img" :alt="articles[0].author.name" />
     <h1>Author: {{ articles[0].author.name }}</h1>
     <p>Bio: {{ articles[0].author.bio }}</p>
     <h3>Here are a list of articles by {{ articles[0].author.name }}:</h3>

@@ -1,4 +1,7 @@
 // https://nuxtjs.org/blog/creating-blog-with-nuxt-content
+import getRoutes from "./utils/getRoutes";
+import getSiteMeta from "./utils/getSiteMeta";
+const meta = getSiteMeta();
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -6,17 +9,34 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'chuletas',
     htmlAttrs: {
-      lang: 'en'
+      lang: "es-ES",
     },
+    title: "Mi sitio web personal creado con @nuxt/content.",
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      ...meta,
+      { charset: "utf-8" },
+      { name: "HandheldFriendly", content: "True" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { property: "og:site_name", content: "Jorge Santana" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Mi sitio web personal creado con @nuxt/content.",
+      },
+      { property: "og:image:width", content: "740" },
+      { property: "og:image:height", content: "300" },
+      { name: "twitter:site", content: "@creacodigos" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+      {
+        hid: "canonical",
+        rel: "canonical",
+        href: process.env.BASE_URL,
+      },
     ]
   },
 
@@ -39,13 +59,22 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
-    '@nuxt/content'
+    '@nuxt/content',
+    "@nuxtjs/sitemap",
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
+  // SiteMap Configuration: https://redfern.dev/articles/adding-a-sitemap-using-nuxt-content/
+  sitemap: { 
+    hostname: process.env.BASE_URL, // https://www.yoursite.com
+    routes() {
+      return getRoutes();
+    },
+  },
   content: {
-    nestedProperties: ['author.name']
+    nestedProperties: ['author.name'],
+    //liveEdit: false
   }
 }
