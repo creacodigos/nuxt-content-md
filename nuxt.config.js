@@ -8,7 +8,7 @@ export default {
   target: 'static',
   router: {
     // https://nuxtjs.org/docs/2.x/deployment/github-pages
-    base: 'https://github.com/creacodigos/nuxt-content-md.git'
+    base: '/nuxt-content-md/'
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
