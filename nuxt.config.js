@@ -6,7 +6,10 @@ const meta = getSiteMeta();
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  router: {
+    // https://nuxtjs.org/docs/2.x/deployment/github-pages
+    base: 'https://github.com/creacodigos/nuxt-content-md.git'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     htmlAttrs: {
