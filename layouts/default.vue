@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark" class="navbar">
       <div class="container">
-        <nuxt-link to="/" class="title">Chuletas</nuxt-link>
+        <nuxt-link to="/" class="title">Creacódigos</nuxt-link>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
