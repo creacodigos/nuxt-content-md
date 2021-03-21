@@ -9,7 +9,7 @@
 
     <author :author="article.author" />
 
-    <prev-next :prev="prev" :next="next" />
+    <prev-next :prev="prev" :next="next" class="prev-next" />
   </article>
 </template>
 
@@ -143,7 +143,12 @@ import getSiteMeta from "~/utils/getSiteMeta";
   }
 </script>
 
-<style>
+<style scoped>
+  img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.15);
+  }
   .nuxt-content h2 {
     font-weight: bold;
     font-size: 28px;
@@ -162,5 +167,26 @@ import getSiteMeta from "~/utils/getSiteMeta";
   width: 20px;
   height: 20px;
   background-size: 20px 20px;
+}
+</style>
+
+<style >
+.prev-next {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.prev-next > a
+ {
+  padding:1rem;
+  background-color: black;
+  color: white !important;
+  border-radius: 0.5rem;
+}
+.prev-next > a:hover 
+{
+  background-color: white;
+  color: black !important;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,0.15);
 }
 </style>

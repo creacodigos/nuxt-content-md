@@ -1,7 +1,7 @@
 ---
 title: Php
 description: Learning how to use @nuxt/content to create a blog
-img: first-blog-post.jpg
+img: /img/php.jpg
 alt: my first blog post
 author:
   name: Jorge Santana

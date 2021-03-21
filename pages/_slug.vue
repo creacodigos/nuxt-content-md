@@ -1,6 +1,6 @@
 <template>
   <article>
-    <nuxt-content :document="article"/>
+    <nuxt-content :document="article" class="page"/>
   </article>
 </template>
 
@@ -125,3 +125,9 @@
     },
   }
 </script>
+<style>
+.page img{
+  max-width: 100%;
+  margin: 2rem auto;
+}
+</style>
