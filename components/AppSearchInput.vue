@@ -4,8 +4,8 @@
       v-model="searchQuery"
       type="search"
       autocomplete="off"
-      placeholder="Search Articles"
-      size="sm" class="mr-sm-2" 
+      placeholder="Buscar Artículos"
+      size="md" class="mr-sm-2" 
     />
     
     <ul v-if="articles.length">
