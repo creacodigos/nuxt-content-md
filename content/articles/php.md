@@ -1,12 +1,12 @@
 ---
-title: Php
-description: Learning how to use @nuxt/content to create a blog
+title: Chuletas sobre Php
+description: Repositorio con tips y notas sobre PHP que he ido recopilando.
 img: /img/php.jpg
-alt: my first blog post
+alt: Chuletas sobre Php
 author:
   name: Jorge Santana
   bio: Full Stack Developer & PizzaBurger Maker 🖥️ 🍕 🍔 🎸
-  img: https://avatars.githubusercontent.com/u/50615503?s=400&u=d6ef3d6548024516b1ca246386958bf32843607c&v=4
+  img: /img/jorge_santana.jpg
 ---
 # PHP
 

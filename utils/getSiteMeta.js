@@ -3,7 +3,7 @@ const url = "https://crecodigos.com";
 const title = "Mi sitio web personal creado con @nuxt/content";
 const description =
   "Mi sitio web personal creado con @nuxt/content";
-const mainImage = "https://avatars.githubusercontent.com/u/50615503?s=400&u=d6ef3d6548024516b1ca246386958bf32843607c&v=4";
+const mainImage = "/img/jorge_santana.jpg";
 
 export default (meta) => {
     return [

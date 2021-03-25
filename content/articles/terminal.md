@@ -1,12 +1,12 @@
 ---
-title: Terminal
-description: Learning how to use @nuxt/content to create a blog
+title: Chuletas sobre Terminal
+description: Repositorio con tips y notas sobre el uso de Terminal que he ido recopilando y que me han salvado la vida en este oscuro mundo de la consola de comandos.
 img: /img/terminal.jpg
-alt: my first blog post
+alt: Chuletas sobre Terminal
 author:
   name: Jorge Santana
   bio: Full Stack Developer & PizzaBurger Maker 🖥️ 🍕 🍔 🎸
-  img: https://avatars.githubusercontent.com/u/50615503?s=400&u=d6ef3d6548024516b1ca246386958bf32843607c&v=4
+  img: /img/jorge_santana.jpg
 ---
 # Chuletas Terminal Unix - Macos
 

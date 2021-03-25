@@ -2,8 +2,8 @@
   <article>
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
-    <img :src="article.img" :alt="article.alt" />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <img :src="$config.app.basePath+article.img" :alt="article.alt" />
+    <p class="date">Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
     <nuxt-content :document="article" />
 
@@ -168,6 +168,13 @@ import getSiteMeta from "~/utils/getSiteMeta";
   height: 20px;
   background-size: 20px 20px;
 }
+.date{
+  color: #666;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
 </style>
 
 <style >

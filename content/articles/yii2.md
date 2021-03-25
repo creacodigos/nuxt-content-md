@@ -1,12 +1,12 @@
 ---
-title: Yii 2
-description: Learning how to use @nuxt/content to create a blog
+title: Chuletas sobre Yii 2
+description: Repositorio con tips y notas sobre el uso del Framework PHP Yii2
 img: /img/yii2.jpg
-alt: my first blog post
+alt: Chuletas sobre Yii 2
 author:
   name: Jorge Santana
   bio: Full Stack Developer & PizzaBurger Maker 🖥️ 🍕 🍔 🎸
-  img: https://avatars.githubusercontent.com/u/50615503?s=400&u=d6ef3d6548024516b1ca246386958bf32843607c&v=4
+  img: /img/jorge_santana.jpg
 ---
 # Yii 2
 

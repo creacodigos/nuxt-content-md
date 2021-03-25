@@ -1,11 +1,7 @@
 <template>
-  <div style="
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-  ">
+  <div>
       <header style="flex-shrink: 0;">
-          <b-navbar toggleable="lg" type="dark" variant="dark" class="navbar">
+          <b-navbar toggleable="lg" type="dark" class="navbar">
         <div class="container">
           <nuxt-link to="/" class="title">Creacódigos</nuxt-link>
 
@@ -59,11 +55,54 @@ html, body{
 }
 a, a:hover{
   text-transform: none;
+  text-decoration: none;
   color: black;
+}
+a:hover{
+
+    text-shadow: 0.25rem 0.25rem 0.25rem rgba(0,0,0,0.10);
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: bold;
+  line-height: 2em;
+}
+.author {
+    padding: 1rem;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    display: flex;
+    background-color: #eff1de;
+}
+.author > a{
+  display: flex;
+}
+.author img{
+  width: 100px;
+  max-width: 100px;
+  height: 100px;
+  max-height: 100px;
+  margin-right: 1rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+.article img{
+  margin-bottom: 1rem;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.article {
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 0.75rem rgba(0,0,0,0.10);
 }
 
 </style>
@@ -143,10 +182,23 @@ h1, h2, h3, h4, h5 {
 header, 
 footer{
   background-color: black;
-}
-footer {
   color: white;
-  padding: 5rem;
+  padding: 5rem 0;
   text-align: center;
+}
+header{
+  position: sticky;
+  top: 0;
+  padding: 1rem 0;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .navbar-nav {
+        flex-direction: unset;
+        padding: 1rem 0;
+    }
+
 }
 </style>

@@ -1,13 +1,12 @@
 <template>
   <div>
-    <h1>Blog Posts</h1>
+    <author :author="articles[0].author" />
     <ul>
       <li v-for="article of articles" :key="article.slug" class="article">
         <NuxtLink :to="{ name: 'blog-slug', params: { slug: article.slug } }">
-          <img :src="article.img" />
+          <img :src="$config.app.basePath+article.img" />
           <div>
             <h2>{{ article.title }}</h2>
-            <p>by {{ article.author.name }}</p>
             <p>{{ article.description }}</p>
           </div>
         </NuxtLink>
@@ -28,27 +27,9 @@
       return {
         articles
       }
+    },
+    mounted(){
+      console.log(this.$config);
     }
   }
 </script>
-<style>
-  img {
-    max-width: 100%;
-    border-radius: 0.5rem;
-  }
-  .article img{
-    margin-bottom: 1rem;
-  }
-  ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li.article {
-    padding: 1rem;
-    margin: 1rem auto;
-    border-radius: 0.5rem;
-    box-shadow: 0.25rem 0.25rem 0.75rem rgba(0,0,0,0.10);
-  }
-</style>
