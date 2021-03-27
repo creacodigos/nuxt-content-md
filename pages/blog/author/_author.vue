@@ -1,12 +1,6 @@
 <template>
   <div>
-    <div class="author">
-      <img v-if="articles[0].author.img" :src="articles[0].author.img" :alt="articles[0].author.name" />
-      <div>
-        <h1>{{ articles[0].author.name }}</h1>
-        <p>{{ articles[0].author.bio }}</p>
-      </div>
-    </div>
+    <Author :author="articles[0].author" />
     <h3>Estos son las entradas de {{ articles[0].author.name }}:</h3>
     <ul>
       <li v-for="article in articles" :key="article.slug" class="article">
