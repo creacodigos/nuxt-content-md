@@ -63,15 +63,14 @@ export default {
     // https://go.nuxtjs.dev/bootstrap
     'bootstrap-vue/nuxt',
     '@nuxt/content',
-    "@nuxtjs/sitemap",
+    "@nuxtjs/sitemap",'@nuxtjs/pwa',
   ],
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
   // SiteMap Configuration: https://redfern.dev/articles/adding-a-sitemap-using-nuxt-content/
-  sitemap: { 
+  sitemap: {
     hostname: process.env.BASE_URL, // https://www.yoursite.com
     routes() {
       return getRoutes();
@@ -89,5 +88,18 @@ export default {
     height: '2px',
     continuous: true,
     duration: 1000
+  },
+
+  // https://pwa.nuxtjs.org/
+  pwa: {
+    meta: {
+      title: 'My portfolio nuxt-content-md',
+      author: 'Jorge Santana @creacodigos',
+    },
+    manifest: {
+      name: 'Nuxt.js PWAs are so easy',
+      short_name: 'Nuxt.js PWA',
+      lang: 'es',
+    },
   }
 }
