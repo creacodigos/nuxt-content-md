@@ -118,7 +118,7 @@
           title: this.article.title,
           description: this.article.description,
           url: `${this.$config.baseUrl}/${this.$route.params.slug}`,
-          mainImage: this.article.image,
+          mainImage: `${this.$config.baseUrl}/${this.article.image}`,
         };
         return getSiteMeta(metaData);
       }
