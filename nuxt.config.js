@@ -1,6 +1,6 @@
 // https://nuxtjs.org/blog/creating-blog-with-nuxt-content
-import getRoutes from './utils/getRoutes';
-import getSiteMeta from './utils/getSiteMeta';
+import getRoutes from "./utils/getRoutes";
+import getSiteMeta from "./utils/getSiteMeta";
 const meta = getSiteMeta();
 
 export default {
