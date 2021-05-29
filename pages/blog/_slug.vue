@@ -190,7 +190,7 @@ import getSiteMeta from "~/utils/getSiteMeta";
   color: white !important;
   border-radius: 0.5rem;
 }
-.prev-next > a:hover 
+.prev-next > a:hover
 {
   background-color: white;
   color: black !important;
