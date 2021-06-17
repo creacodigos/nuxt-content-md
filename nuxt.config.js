@@ -10,6 +10,9 @@ export default {
         // https://nuxtjs.org/docs/2.x/deployment/github-pages
         base: '/nuxt-content-md/',
     },
+    server: {
+      port: 5555 // por defecto: 3000
+    },
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         htmlAttrs: {
