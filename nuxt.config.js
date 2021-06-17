@@ -5,7 +5,7 @@ const meta = getSiteMeta();
 
 export default {
     // Target: https://go.nuxtjs.dev/config-target
-    target: 'static',
+    target: 'server',
     router: {
         // https://nuxtjs.org/docs/2.x/deployment/github-pages
         base: '/nuxt-content-md/',
