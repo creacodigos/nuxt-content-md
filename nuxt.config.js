@@ -8,7 +8,7 @@ export default {
     target: 'server',
     router: {
         // https://nuxtjs.org/docs/2.x/deployment/github-pages
-        base: '/' // process.env.BASE_URL //'/nuxt-content-md/',
+        base: '/', //process.env.BASE_URL //'/nuxt-content-md/',
     },
     server: {
       port: 5555 // por defecto: 3000
