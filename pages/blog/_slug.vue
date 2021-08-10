@@ -2,7 +2,12 @@
   <article>
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
-    <img :src="$config.app.basePath+article.img" :alt="article.alt" />
+    <img
+      :src="$config.app.basePath+article.img"
+      :alt="article.alt"
+      loading="lazy"
+      onload="this.style.opacity='0',this.style.animation='fadein 2s',this.style.opacity='1'"
+    />
     <p class="date">Article last updated: {{ formatDate(article.updatedAt) }}</p>
 
     <nuxt-content :document="article" />
