@@ -5,14 +5,16 @@ const meta = getSiteMeta();
 
 export default {
     // Target: https://go.nuxtjs.dev/config-target
-    target: 'server',
+    target: 'static',
     router: {
         // https://nuxtjs.org/docs/2.x/deployment/github-pages
-        base: '/', //process.env.BASE_URL //'/nuxt-content-md/',
+        base: '/nuxt-content-md/', //process.env.BASE_URL //'/nuxt-content-md/',
     },
+    /*
     server: {
       port: 5555 // por defecto: 3000
     },
+    */
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
         htmlAttrs: {
