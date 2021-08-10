@@ -1,0 +1,10 @@
+{
+  "name": "Nuxt.js PWAs are so easy",
+  "short_name": "Nuxt.js PWA",
+  "description": "Sitio creado usando el módulo @nuxt/content/",
+  "icons": [],
+  "start_url": "/nuxt-content-md/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "lang": "es"
+}
