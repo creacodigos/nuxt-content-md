@@ -193,6 +193,11 @@ header{
   z-index: 1;
 }
 
+
+.icon.icon-link{
+    display:none !important;
+}
+
 @media only screen and (max-width: 768px) {
     
     .navbar-nav {
